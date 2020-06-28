@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 import "./Contact.css";
 import "semantic-ui-css/semantic.min.css";
 // import { Form, Input, TextArea, Button } from "semantic-ui-react";
@@ -19,6 +19,30 @@ const Contact = () => {
     setContent({ ...content, [event.target.name]: event.target.value });
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    setContent({ buttonText: "...sending" });
+
+    let data = {
+      firstName: content.firstName,
+      lastName: content.lastName,
+      message: content.message,
+      email: content.email,
+    };
+    console.log(data);
+    axios
+      .post("/api/forma", data)
+      .then((res) => {
+        setContent({ sent: true }, resetForm());
+        console.log(`content =====>>> ${content.sent}`);
+      })
+      .catch((error) => {
+        console.log(error);
+        console.log("message not sent");
+      });
+  };
+
   const resetForm = () =>
     setContent({
       firstName: "",
@@ -27,25 +51,6 @@ const Contact = () => {
       email: "",
       buttonText: "Message Sent",
     });
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    setContent({ buttonText: "...sending" });
-
-    let data = {
-      ...content,
-    };
-
-    // axios
-    //   .post("/api/forma", data)
-    //   .then((res) => {
-    //     setContent({ sent: true }, resetForm());
-    //   })
-    //   .catch(() => {
-    //     console.log("message not sent");
-    //   });
-  };
 
   return (
     <section id="contact">
