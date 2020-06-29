@@ -63,11 +63,3 @@ ul > li > a.active {
   border-left: 5px solid rgb(255, 134, 134);
   transform: scale(1.1);
 }
-
-#home,
-#about,
-#resume,
-#recipes,
-#contact {
-  margin-bottom: 0;
-}

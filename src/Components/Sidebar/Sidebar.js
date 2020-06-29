@@ -6,7 +6,6 @@ const Sidebar = () => {
   return (
     <div className="Sidebar">
       <ul>
-        {/* <h1>Cassie</h1> */}
         <img src="https://i.imgur.com/QwpDS0N.png" alt="Cassie Brown" />
         <li>
           <Link
@@ -14,7 +13,7 @@ const Sidebar = () => {
             to="home"
             spy={true}
             smooth={true}
-            // offset={-70}
+            offset={-70}
             duration={100}
           >
             Home
@@ -26,7 +25,7 @@ const Sidebar = () => {
             to="about"
             spy={true}
             smooth={true}
-            // offset={-70}
+            offset={-70}
             duration={500}
           >
             About
@@ -38,7 +37,7 @@ const Sidebar = () => {
             to="resume"
             spy={true}
             smooth={true}
-            // offset={-70}
+            offset={-70}
             duration={500}
           >
             Resume
@@ -50,7 +49,7 @@ const Sidebar = () => {
             to="recipes"
             spy={true}
             smooth={true}
-            // offset={-70}
+            offset={-70}
             duration={500}
           >
             Recipes
@@ -62,7 +61,7 @@ const Sidebar = () => {
             to="contact"
             spy={true}
             smooth={true}
-            // offset={-70}
+            offset={-70}
             duration={500}
           >
             Contact

@@ -4,12 +4,21 @@ import "./About.css";
 const about = () => {
   return (
     <section id="about">
-      <h1>About</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-        blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab
-        quibusdam ratione veniam in, mollitia fuga repudiandae?
-      </p>
+      <h1>Hello!</h1>
+      <div className="about-content">
+        <img src="https://i.imgur.com/LnmLlbT.jpg" alt="cassie & coffee" />
+        <p>
+          Hey, I'm Cassie Brown, a Registered Dietitian from Dallas, Texas. I'm
+          passionate about teaching wellness through balanced meals, exercise,
+          and a positive body image. I love working with patients in hospitals
+          or through my private practice. I also love Adam, coffee, and nachos.
+        </p>
+        <p>
+          Hobbies: dauchshunds, dauchshunds, dauchshunds, dauchshunds,
+          dauchshunds, dauchshunds, dauchshunds, dauchshunds, dauchshunds, and
+          dauchshunds
+        </p>
+      </div>
     </section>
   );
 };
