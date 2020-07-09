@@ -67,6 +67,40 @@ const Sidebar = () => {
             Contact
           </Link>
         </li>
+        <li>
+          <div className="social-media">
+            <div>
+              <a
+                href="https://www.linkedin.com/in/cassiebrownrd/"
+                className="fa fa-linkedin"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <p>li</p>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://twitter.com/sassyrosebrown"
+                className="fa fa-twitter"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <p>tw</p>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.facebook.com/cassierose16"
+                className="fa fa-facebook"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <p>fb</p>
+              </a>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   );

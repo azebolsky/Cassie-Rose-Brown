@@ -63,3 +63,31 @@ ul > li > a.active {
   border-left: 5px solid rgb(255, 134, 134);
   transform: scale(1.1);
 }
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa {
+  padding: 20px;
+  margin: 5px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #3b5998;
+  color: rgb(254, 175, 175);
+}
+
+.fa:hover {
+  color: white;
+}
+
+.social-media > div > a > p {
+  display: none;
+}

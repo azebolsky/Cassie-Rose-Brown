@@ -4,9 +4,14 @@ import "./Home.css";
 const home = () => {
   return (
     <section id="home">
-      <h1>Cassie Brown</h1>
-      <h3>MS RD LD</h3>
-      <h4>
+      <div>
+        <div>
+          <h1>Cassie Brown</h1>
+          <h3>MS RD LD</h3>
+        </div>
+        {/* <img src="https://i.imgur.com/N9dkVfg.jpg" alt="cassie & coffee" /> */}
+      </div>
+      {/* <h4>
         <img
           src="https://i.imgur.com/bofb7de.png"
           alt="cactus icon"
@@ -14,26 +19,18 @@ const home = () => {
           height="30px"
         />{" "}
         Dallas, TX
-      </h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-        assumenda aliquid ipsam commodi, vitae libero pariatur dolor aspernatur
-        provident asperiores sed sapiente totam esse enim, illo magni quaerat,
-        tempore consequatur. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Aliquid deserunt beatae ea. Neque unde soluta voluptatem nostrum
-        eaque, delectus similique amet facilis repudiandae alias quasi modi!
-        Maxime aliquid animi excepturi.
-      </p>
+      </h4> */}
+      <h4>Oh hey!</h4>
+      <p>Hey! I'm Cassie, a Registered Dietitian in Dallas, TX.</p>
       <div className="picture-block">
-        <img src="https://i.imgur.com/LnmLlbT.jpg" alt="cassie & coffee" />
-        <img src="https://i.imgur.com/Box2HZp.jpg" alt="cassie & coffee" />
+        {/* <img src="https://i.imgur.com/Box2HZp.jpg" alt="cassie & coffee" />
         <img src="https://i.imgur.com/uBPLK6e.jpg" alt="cassie & coffee" />
         <img src="https://i.imgur.com/Box2HZp.jpg" alt="cassie & coffee" />
         <img src="https://i.imgur.com/LnmLlbT.jpg" alt="cassie & coffee" />
         <img src="https://i.imgur.com/uBPLK6e.jpg" alt="cassie & coffee" />
         <img src="https://i.imgur.com/Box2HZp.jpg" alt="cassie & coffee" />
         <img src="https://i.imgur.com/LnmLlbT.jpg" alt="cassie & coffee" />
-        <img src="https://i.imgur.com/uBPLK6e.jpg" alt="cassie & coffee" />
+        <img src="https://i.imgur.com/uBPLK6e.jpg" alt="cassie & coffee" /> */}
       </div>
     </section>
   );
