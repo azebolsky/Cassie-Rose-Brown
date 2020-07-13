@@ -6,34 +6,6 @@ const resume = () => {
     <section id="resume">
       <h1>Experience</h1>
       <div>
-        <h3>Educations</h3>
-        <div className="experience-container">
-          <div className="experience-logo">
-            <img
-              src="https://i.imgur.com/MtZIpeb.png?1"
-              alt="Texas Woman's University Logo"
-            ></img>
-          </div>
-          <div className="experience-section">
-            <h3>Texas Woman's University</h3>
-            <p>Master's in Dietetics</p>
-            <p>2017-2019</p>
-          </div>
-        </div>
-        <div className="experience-container">
-          <div className="experience-logo">
-            <img
-              src="https://i.imgur.com/H5eUtof.png"
-              alt="University of Nebraska Lincoln Logo"
-            ></img>
-          </div>
-          <div className="experience-section">
-            <h3>University of Nebraska at Lincoln</h3>
-            <p>Bachelor's in Nutrition Science</p>
-            <p>2012-2015</p>
-          </div>
-        </div>
-        <h3>Careers</h3>
         <div className="experience-container">
           <div className="experience-logo">
             <img
@@ -59,7 +31,7 @@ const resume = () => {
             ></img>
           </div>
           <div className="experience-section">
-            <h3>Registered Dietitian</h3>
+            <h3>Clinical Dietitian</h3>
             <h4>Dallas Medical Center</h4>
             <p>March 2020 - Present</p>
           </div>
@@ -87,7 +59,36 @@ const resume = () => {
           <div className="experience-section">
             <h3>Graduate Assistant</h3>
             <h4>Texas Woman's University</h4>
-            <p>2020 - Present</p>
+            <p>Aug 2017 - May 2018</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Educations</h3>
+        <div className="experience-container">
+          <div className="experience-logo">
+            <img
+              src="https://i.imgur.com/MtZIpeb.png?1"
+              alt="Texas Woman's University Logo"
+            ></img>
+          </div>
+          <div className="experience-section">
+            <h3>Texas Woman's University</h3>
+            <p>Master's in Dietetics</p>
+            <p>2017-2019</p>
+          </div>
+        </div>
+        <div className="experience-container">
+          <div className="experience-logo">
+            <img
+              src="https://i.imgur.com/H5eUtof.png"
+              alt="University of Nebraska Lincoln Logo"
+            ></img>
+          </div>
+          <div className="experience-section">
+            <h3>University of Nebraska at Lincoln</h3>
+            <p>Bachelor's in Nutrition Science</p>
+            <p>2012-2015</p>
           </div>
         </div>
       </div>
