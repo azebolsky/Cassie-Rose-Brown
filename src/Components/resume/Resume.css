@@ -12,7 +12,7 @@
 
 #resume > div {
   /* background-color: lightyellow; */
-  border-left: 2px solid blue;
+  /* border-left: 2px solid rgb(174, 129, 135); */
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -20,23 +20,35 @@
 }
 
 .experience-container {
-  background-color: rgba(182, 144, 144, 0.221);
   width: 100%;
   height: 80%;
   display: flex;
   align-items: center;
-  margin: 10px;
+  border-left: 2px solid rgb(174, 129, 135);
+  position: relative;
+}
+
+.experience-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -14px;
+  background-color: rgb(174, 129, 135);
+  border: 4px solid rgb(104, 92, 96);
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .experience-container:hover {
-  transform: scale(1.002);
-}
-
-.experience-container:hover > .experience-section {
-  background-color: rgba(182, 144, 144, 0.6);
+  background-color: rgb(223, 188, 188);
 }
 
 .experience-container:hover > .experience-logo {
+  background-color: rgb(255, 134, 134);
+}
+
+.experience-container:hover::after {
   background-color: rgb(255, 134, 134);
 }
 
@@ -48,6 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 .experience-logo > img {
@@ -63,10 +76,6 @@
   width: 100%;
   min-height: 80%;
   margin: 10px;
-}
-
-.experience-section:hover {
-  background-color: rgba(182, 144, 144, 0.5);
 }
 
 .experience-section > h3,

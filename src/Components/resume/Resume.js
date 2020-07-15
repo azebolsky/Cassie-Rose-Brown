@@ -63,8 +63,8 @@ const resume = () => {
           </div>
         </div>
       </div>
+      <h1>Educations</h1>
       <div>
-        <h3>Educations</h3>
         <div className="experience-container">
           <div className="experience-logo">
             <img
