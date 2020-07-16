@@ -1,20 +1,48 @@
 #home {
-  background: url("https://i.imgur.com/N9dkVfg.jpg") no-repeat center;
+  background-image: url("https://i.imgur.com/N9dkVfg.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: center; */
   color: black;
   height: 1400px;
   width: 80vw;
-  /* z-index: 2; */
   margin: 0;
+  padding: 0;
 }
 
-#home > div {
+.section {
   display: flex;
   flex-direction: row;
 }
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+.static {
+  background-color: red;
+}
+
+/* .bg1::after {
+  background-image: url("https://i.imgur.com/N9dkVfg.jpg");
+}
+
+.bg2::after {
+  background-image: url("https://i.imgur.com/LnmLlbT.jpg");
+} */
 
 #home h1 {
   font-size: 80px;
