@@ -41,9 +41,9 @@ const recipes = () => {
     <section id="recipes">
       <h1>My Recipes</h1>
       <div className="container">
-        {recipeItems.map((item) => {
+        {recipeItems.map((item, idx) => {
           return (
-            <div className="card">
+            <div key={idx} className="card">
               <h1 className="title">{item.title}</h1>
               <img
                 src={item.image}
