@@ -1,37 +1,68 @@
-/* * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-} */
-
 #recipes {
-  background-color: orange;
-  height: 100vh;
+  background-color: rgb(85, 85, 85);
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
+}
+
+#recipes > h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.container {
+  width: 100%;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: green;
   margin: 0;
 }
 
-.slides .slick-prev,
-.slides .slick-next {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-}
-
-.slides {
+.card {
+  display: flex;
+  height: 450px;
+  width: 320px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  margin-left: -10px;
+  transition: 0.4s ease-out;
   position: relative;
+  left: 0px;
 }
 
-.slides .slick-prev,
-.slides .slick-next {
+/* .card:not(:first-child) {
+  margin-left: -50px;
+} */
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
   position: absolute;
-  top: 50%;
-  z-index: 1;
+  left: 20px;
+  top: 15px;
 }
 
-.slides .slick-prev {
-  left: 5%;
-}
-
-.slides .slick-next {
-  right: 5%;
+.link {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: auto;
 }

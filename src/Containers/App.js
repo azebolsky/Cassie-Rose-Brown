@@ -19,7 +19,7 @@ function App() {
         <Home title="home" dark={true} id="home" />
         <About title="about" dark={true} id="about" />
         <Resume title="resume" dark={true} id="resume" />
-        <Recipes title="recipes" dark={true} id="recipes" />
+        <Recipes title="recipe" dark={true} id="recipes" />
         <Contact title="contact" dark={true} id="contact" />
         <button onClick={handleButtonClick}>back to the top</button>
       </main>
