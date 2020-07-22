@@ -4,7 +4,7 @@ import "./Contact.css";
 import "semantic-ui-css/semantic.min.css";
 // import { Form, Input, TextArea, Button } from "semantic-ui-react";
 
-const Contact = () => {
+const Contact = ({ backToTop }) => {
   const [content, setContent] = useState({
     firstName: "",
     lastName: "",
@@ -165,6 +165,9 @@ const Contact = () => {
           onClick={handleSubmit}
         />
       </Form> */}
+      <a href="#" onClick={backToTop}>
+        <i className="fa fa-arrow-up" aria-hidden="true"></i>
+      </a>
     </section>
   );
 };

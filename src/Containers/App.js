@@ -5,6 +5,7 @@ import About from "../Components/about/About";
 import Resume from "../Components/resume/Resume";
 import Recipes from "../Components/recipes/Recipes";
 import Contact from "../Components/contact/Contact";
+import Footer from "../Components/footer/Footer";
 import "./App.css";
 
 function App() {
@@ -20,8 +21,13 @@ function App() {
         <About title="about" dark={true} id="about" />
         <Resume title="resume" dark={true} id="resume" />
         <Recipes title="recipe" dark={true} id="recipes" />
-        <Contact title="contact" dark={true} id="contact" />
-        <button onClick={handleButtonClick}>back to the top</button>
+        <Contact
+          title="contact"
+          dark={true}
+          id="contact"
+          backToTop={handleButtonClick}
+        />
+        <Footer />
       </main>
     </div>
   );
