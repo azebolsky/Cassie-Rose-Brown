@@ -2,23 +2,32 @@
   background-color: rgb(255, 189, 199);
   height: 100%;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
 }
 
-#resume > div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: rgb(174, 129, 135);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
 
 .experience-container {
-  width: 100%;
-  height: 80%;
+  width: 50%;
   display: flex;
   align-items: center;
-  border-left: 2px solid rgb(174, 129, 135);
   position: relative;
+  border: 2px solid rgb(174, 129, 135);
 }
 
 .experience-container::after {
@@ -26,11 +35,48 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  left: -14px;
+  right: -17px;
   background-color: rgb(174, 129, 135);
   border: 3px solid rgb(104, 92, 96);
   border-radius: 50%;
   z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.left::after {
+  right: -14px;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -15px;
+}
+
+@media (max-width: 800px) {
+  .timeline::after {
+    left: 50px;
+  }
 }
 
 .experience-container:hover {

@@ -5,8 +5,8 @@ const resume = () => {
   return (
     <section id="resume">
       <h1>Experience</h1>
-      <div>
-        <div className="experience-container">
+      <div className="timeline">
+        <div className="experience-container left">
           <div className="experience-logo">
             <img
               src="https://i.imgur.com/HCL9WeE.png?1"
@@ -23,7 +23,7 @@ const resume = () => {
             <p>July 2019 - Present</p>
           </div>
         </div>
-        <div className="experience-container">
+        <div className="experience-container right">
           <div className="experience-logo">
             <img
               src="https://i.imgur.com/SDUDwdD.png?3"
@@ -36,7 +36,7 @@ const resume = () => {
             <p>March 2020 - Present</p>
           </div>
         </div>
-        <div className="experience-container">
+        <div className="experience-container left">
           <div className="experience-logo">
             <img
               src="https://i.imgur.com/MRcmg9M.png"
@@ -49,7 +49,7 @@ const resume = () => {
             <p>July 2019 - April 2020</p>
           </div>
         </div>
-        <div className="experience-container">
+        <div className="experience-container right">
           <div className="experience-logo">
             <img
               src="https://i.imgur.com/MtZIpeb.png?1"
