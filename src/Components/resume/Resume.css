@@ -1,8 +1,32 @@
 #resume {
-  background-color: rgb(255, 189, 199);
+  background-color: rgb(249, 227, 230);
   height: 100%;
   width: 100%;
   margin: 0 auto;
+}
+
+#resume:hover > .underline {
+  width: 120px;
+  transition: 0.5s;
+}
+
+#resume > h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px auto 5px auto;
+}
+
+.underline {
+  width: 80px;
+  height: 5px;
+  background-color: rgb(255, 134, 134);
+  margin: 0 auto 20px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .timeline {
@@ -15,7 +39,7 @@
   content: "";
   position: absolute;
   width: 6px;
-  background-color: rgb(174, 129, 135);
+  background-color: rgb(104, 92, 96);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -24,10 +48,14 @@
 
 .experience-container {
   width: 50%;
+  /* background-color: rgb(249, 198, 204); */
+  -webkit-box-shadow: 0px 2px 7px -5px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 2px 7px -5px rgba(0, 0, 0, 1);
+  box-shadow: 0px 2px 7px -5px rgba(0, 0, 0, 1);
+  border-radius: 5px;
   display: flex;
   align-items: center;
   position: relative;
-  border: 2px solid rgb(174, 129, 135);
 }
 
 .experience-container::after {
@@ -36,8 +64,8 @@
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: rgb(174, 129, 135);
   border: 3px solid rgb(104, 92, 96);
+  background-color: rgb(104, 92, 96);
   border-radius: 50%;
   z-index: 1;
 }
@@ -47,15 +75,13 @@
 }
 
 .left::after {
-  right: -14px;
+  right: -12px;
 }
 
-/* Place the container to the right */
 .right {
   left: 50%;
 }
 
-/* Add arrows to the right container (pointing left) */
 .right::before {
   content: " ";
   height: 0;
@@ -64,23 +90,44 @@
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
 }
 
 .right::after {
-  left: -15px;
+  left: -13px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .timeline::after {
     left: 50px;
+  }
+
+  .experience-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .experience-container::before {
+    left: 60px;
+  }
+
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
   }
 }
 
 .experience-container:hover {
   background-color: rgb(223, 188, 188);
+  transition: 0.3s;
+}
+
+.experience-container:hover > .experience-section {
+  background-color: rgb(247, 211, 211);
 }
 
 .experience-container:hover > .experience-logo {

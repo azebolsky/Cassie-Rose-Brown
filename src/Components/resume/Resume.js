@@ -5,6 +5,7 @@ const resume = () => {
   return (
     <section id="resume">
       <h1>Experience</h1>
+      <div className="underline"></div>
       <div className="timeline">
         <div className="experience-container left">
           <div className="experience-logo">
@@ -64,31 +65,34 @@ const resume = () => {
         </div>
       </div>
       <h1>Educations</h1>
-      <div>
-        <div className="experience-container">
-          <div className="experience-logo">
-            <img
-              src="https://i.imgur.com/MtZIpeb.png?1"
-              alt="Texas Woman's University Logo"
-            ></img>
+      <div className="underline"></div>
+      <div className="timeline">
+        <div>
+          <div className="experience-container left">
+            <div className="experience-logo">
+              <img
+                src="https://i.imgur.com/MtZIpeb.png?1"
+                alt="Texas Woman's University Logo"
+              ></img>
+            </div>
+            <div className="experience-section">
+              <h3>Texas Woman's University</h3>
+              <p>Master's in Dietetics</p>
+              <p>2017-2019</p>
+            </div>
           </div>
-          <div className="experience-section">
-            <h3>Texas Woman's University</h3>
-            <p>Master's in Dietetics</p>
-            <p>2017-2019</p>
-          </div>
-        </div>
-        <div className="experience-container">
-          <div className="experience-logo">
-            <img
-              src="https://i.imgur.com/H5eUtof.png"
-              alt="University of Nebraska Lincoln Logo"
-            ></img>
-          </div>
-          <div className="experience-section">
-            <h3>University of Nebraska at Lincoln</h3>
-            <p>Bachelor's in Nutrition Science</p>
-            <p>2012-2015</p>
+          <div className="experience-container right">
+            <div className="experience-logo">
+              <img
+                src="https://i.imgur.com/H5eUtof.png"
+                alt="University of Nebraska Lincoln Logo"
+              ></img>
+            </div>
+            <div className="experience-section">
+              <h3>University of Nebraska at Lincoln</h3>
+              <p>Bachelor's in Nutrition Science</p>
+              <p>2012-2015</p>
+            </div>
           </div>
         </div>
       </div>
