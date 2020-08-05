@@ -10,8 +10,6 @@ const footer = () => {
           <div className="bubble">Thanks for stopping by!</div>
           <img
             src="https://i.imgur.com/jTmlUuJ.png"
-            width="150px"
-            height="150px"
             className="lena-image"
             alt="lena-the-dacschund"
           />
