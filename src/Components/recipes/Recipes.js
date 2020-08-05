@@ -40,6 +40,7 @@ const recipes = () => {
   return (
     <section id="recipes">
       <h1>My Recipes</h1>
+      <div className="underline"></div>
       <div className="container">
         {recipeItems.map((item, idx) => {
           return (

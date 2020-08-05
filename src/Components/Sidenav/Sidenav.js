@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-scroll";
-import "./Sidebar.css";
+import "./Sidenav.css";
 
-const Sidebar = () => {
+const Sidenav = () => {
   return (
     <div className="Sidebar">
       <ul>
-        <img src="https://i.imgur.com/QwpDS0N.png" alt="Cassie Brown" />
+        <img
+          className="sidebar-img"
+          src="https://i.imgur.com/QwpDS0N.png"
+          alt="Cassie Brown"
+        />
         <li>
           <Link
             activeClass="active"
@@ -106,4 +110,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Sidenav;

@@ -1,15 +1,38 @@
 #recipes {
-  background-color: rgb(85, 85, 85);
-  min-height: 100vh;
+  background-color: rgb(108, 106, 106);
+  min-height: 180vh;
   height: 100%;
   width: 100%;
+  margin: 0;
+}
+
+#recipes > .underline {
+  margin: 0 auto 50px auto !important;
+}
+
+#recipes:hover > .underline {
+  width: 120px;
+  transition: 0.5s;
+}
+
+#recipes > .underline {
+  width: 80px;
+  height: 5px;
+  background-color: rgb(255, 134, 134);
+  margin: 0 auto 20px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 #recipes > h1 {
   text-align: center;
-  padding-bottom: 20px;
+  margin-top: 30px;
   font-size: 50px;
-  color: black;
+  color: rgb(249, 233, 233);
 }
 
 .container {

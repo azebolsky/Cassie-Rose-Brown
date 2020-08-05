@@ -15,31 +15,25 @@ const Contact = ({ backToTop }) => {
   });
 
   // handle any inputs to the form
-  const handleContentChange = (event) => {
-    setContent({ ...content, [event.target.name]: event.target.value });
+  const handleContentChange = (e) => {
+    setContent({ ...content, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    setContent({ buttonText: "...sending" });
-
-    let data = {
-      firstName: content.firstName,
-      lastName: content.lastName,
-      message: content.message,
-      email: content.email,
-    };
-    console.log(data);
+  const handleSubmit = (e) => {
+    e.preventDefault();
     axios
-      .post("/api/forma", data)
-      .then((res) => {
-        setContent({ sent: true }, resetForm());
-        console.log(`content =====>>> ${content.sent}`);
+      .post("http://localhost:3000/send", {
+        name: content.firstName + " " + content.lastName,
+        email: content.email,
+        message: content.message,
       })
-      .catch((error) => {
-        console.log(error);
-        console.log("message not sent");
+      .then((response) => {
+        if (response.data.msg === "success") {
+          alert("Message Sent");
+          resetForm();
+        } else if (response.data.msg === "fail") {
+          alert("Message failed to send");
+        }
       });
   };
 
@@ -56,47 +50,44 @@ const Contact = ({ backToTop }) => {
     <section id="contact">
       <h1>Have a question? Want to say hi?</h1>
       <h1>Message me!</h1>
-      <form className="contact-form" onSubmit={(event) => handleSubmit(event)}>
-        <label className="message" htmlFor="message">
-          Your Message
-        </label>
+      <form
+        className="contact-form"
+        onSubmit={(event) => handleSubmit(event)}
+        method="POST"
+        action="/contact"
+      >
+        <label className="message">Your Message</label>
         <textarea
           onChange={(event) => handleContentChange(event)}
           name="message"
           className="message-input"
           type="text"
           placeholder="Please write your message here"
-          value={content.message || ""}
+          value={content.message}
           required
         />
 
-        <label className="message-name" htmlFor="firstname">
-          First Name
-        </label>
+        <label className="message-name">First Name</label>
         <input
           onChange={(event) => handleContentChange(event)}
           name="firstName"
           className="message-name"
           type="text"
           placeholder="First Name"
-          value={content.firstName || ""}
+          value={content.firstName}
         />
 
-        <label className="message-name" htmlFor="lastname">
-          Last Name
-        </label>
+        <label className="message-name">Last Name</label>
         <input
           onChange={(event) => handleContentChange(event)}
           name="lastName"
           className="message-name"
           type="text"
           placeholder="Last Name"
-          value={content.lastName || ""}
+          value={content.lastName}
         />
 
-        <label className="message-email" htmlFor="email">
-          Your Email
-        </label>
+        <label className="message-email">Your Email</label>
         <input
           onChange={(event) => handleContentChange(event)}
           name="email"
@@ -104,7 +95,7 @@ const Contact = ({ backToTop }) => {
           type="email"
           placeholder="your@email.com"
           required
-          value={content.email || ""}
+          value={content.email}
         />
 
         <div className="button--container">
@@ -165,7 +156,7 @@ const Contact = ({ backToTop }) => {
           onClick={handleSubmit}
         />
       </Form> */}
-      <a href="#" onClick={backToTop}>
+      <a href="#home" onClick={backToTop}>
         <i className="fa fa-arrow-up" aria-hidden="true"></i>
       </a>
     </section>

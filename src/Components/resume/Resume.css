@@ -5,18 +5,20 @@
   margin: 0 auto;
 }
 
-#resume:hover > .underline {
+.work:hover > .underline-work,
+.education:hover > .underline-education {
   width: 120px;
   transition: 0.5s;
 }
 
-#resume > h1 {
+#resume > div > h1 {
   text-align: center;
   font-size: 50px;
   margin: 20px auto 5px auto;
 }
 
-.underline {
+.underline-work,
+.underline-education {
   width: 80px;
   height: 5px;
   background-color: rgb(255, 134, 134);
