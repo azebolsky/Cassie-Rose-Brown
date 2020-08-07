@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import Sidenav from "../Components/Sidenav/Sidenav";
 import Home from "../Components/home/Home";
 import About from "../Components/about/About";
 import Resume from "../Components/resume/Resume";
@@ -8,6 +7,7 @@ import Contact from "../Components/contact/Contact";
 import Footer from "../Components/footer/Footer";
 import Hamburger from "../Components/hamburger/Hamburger";
 import SideDrawer from "../Components/sidedrawer/SideDrawer";
+import Backdrop from "../Components/Backdrop/Backdrop";
 import "./App.css";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
     });
   };
 
-  const drawerCloseClickHandler = () => {
+  const backdropClickHandler = () => {
     setSideDrawerOpen({ sideDrawerOpen: false });
   };
 
@@ -35,10 +35,13 @@ function App() {
   // }
 
   return (
-    <div className={sideDrawerOpen.sideDrawerOpen ? "App" : ""}>
-      {/* <Sidenav /> */}
-      <SideDrawer show={sideDrawerOpen.sideDrawerOpen} />
-      {/* {sideDrawerStatus} */}
+    <div className="App">
+      {/* <SideDrawer show={sideDrawerOpen.sideDrawerOpen} /> */}
+      <SideDrawer />
+      {/* <Backdrop
+        show={sideDrawerOpen.sideDrawerOpen}
+        click={backdropClickHandler}
+      /> */}
       <main className={sideDrawerOpen.sideDrawerOpen ? "total-width" : ""}>
         <Hamburger drawerToggleClickHandler={drawerToggleClickHandler} />
         <Home title="home" dark={true} id="home" />

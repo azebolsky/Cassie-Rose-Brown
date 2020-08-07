@@ -22,7 +22,7 @@
 .toggle-button-line {
   width: 30px;
   height: 4px;
-  background: palevioletred;
+  background: rgba(216, 112, 147, 0.6);
 }
 
 .toggle-button-x {

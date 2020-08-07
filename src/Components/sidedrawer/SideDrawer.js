@@ -9,7 +9,7 @@ const sideDrawer = (props) => {
   }
 
   return (
-    <div className={drawerClasses}>
+    <div className="Sidebar">
       <ul>
         <img
           className="sidebar-img"
