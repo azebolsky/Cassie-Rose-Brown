@@ -3,13 +3,13 @@ import { Link } from "react-scroll";
 import "./SideDrawer.css";
 
 const sideDrawer = (props) => {
-  let drawerClasses = "Sidebar close";
+  let drawerClasses = "Sidebar-close";
   if (props.show) {
-    drawerClasses = "Sidebar open";
+    drawerClasses = "Sidebar-open";
   }
 
   return (
-    <div className="Sidebar">
+    <div className={drawerClasses}>
       <ul>
         <img
           className="sidebar-img"

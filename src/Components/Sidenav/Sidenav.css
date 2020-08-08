@@ -91,3 +91,9 @@ ul > li > a.active {
 .social-media > div > a > p {
   display: none;
 }
+
+@media (max-width: 800px) {
+  .Sidebar {
+    display: none;
+  }
+}

@@ -8,6 +8,7 @@ import Footer from "../Components/footer/Footer";
 import Hamburger from "../Components/hamburger/Hamburger";
 import SideDrawer from "../Components/sidedrawer/SideDrawer";
 import Backdrop from "../Components/Backdrop/Backdrop";
+import SideNav from "../Components/Sidenav/Sidenav";
 import "./App.css";
 
 function App() {
@@ -29,20 +30,15 @@ function App() {
     setSideDrawerOpen({ sideDrawerOpen: false });
   };
 
-  // let sideDrawerStatus;
-  // if (sideDrawerOpen.sideDrawerOpen) {
-  //   sideDrawerStatus = <SideDrawer />;
-  // }
-
   return (
     <div className="App">
-      {/* <SideDrawer show={sideDrawerOpen.sideDrawerOpen} /> */}
-      <SideDrawer />
-      {/* <Backdrop
+      <SideDrawer show={sideDrawerOpen.sideDrawerOpen} />
+      <Backdrop
         show={sideDrawerOpen.sideDrawerOpen}
         click={backdropClickHandler}
-      /> */}
-      <main className={sideDrawerOpen.sideDrawerOpen ? "total-width" : ""}>
+      />
+      <SideNav />
+      <main>
         <Hamburger drawerToggleClickHandler={drawerToggleClickHandler} />
         <Home title="home" dark={true} id="home" />
         <About title="about" dark={true} id="about" />

@@ -3,12 +3,13 @@
   grid-template-columns: min-content 1fr;
 }
 
-.App-new {
-  display: grid;
-  grid-template-columns: 1fr;
+main {
+  width: 100%;
 }
 
-main {
-  box-shadow: outset 0 20px 15px 20px black;
-  width: 100%;
+@media (max-width: 800px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
