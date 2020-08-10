@@ -30,3 +30,9 @@
   height: 2px;
   background: white;
 }
+
+@media (min-width: 800px) {
+  .toggle-button {
+    display: none;
+  }
+}

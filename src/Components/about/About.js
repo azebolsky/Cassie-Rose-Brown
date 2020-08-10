@@ -4,19 +4,24 @@ import "./About.css";
 const about = () => {
   return (
     <section id="about">
-      <h1>Hello!</h1>
+      <h1>Hello There!</h1>
+      <div className="underline-about"></div>
       <div className="about-content">
-        <img src="https://i.imgur.com/LnmLlbT.jpg" alt="cassie & coffee" />
         <p>
-          Hey, I'm Cassie Brown, a Registered Dietitian from Dallas, Texas. I'm
-          passionate about teaching wellness through balanced meals, exercise,
-          and a positive body image. I love working with patients in hospitals
-          or through my private practice. I also love Adam, coffee, and nachos.
+          Hello! I'm Cassie Brown, a Registered Dietian in Dallas, TX.
+          Currently, I am taking care of patients who are critically ill in the
+          ICU, as well as those in the oncology unit. I am continually reading
+          and learning about how I can provide the best nutrition care and
+          support to my patients. As well as reading as many innovative research
+          articles I can get my hands on, I am studying to obtain my CNSC
+          certification and am taking the exam later this year. In my current
+          position, I am assisting with ERAS protocol implementation, as well as
+          ECMO and COVID 19 nutrition support guidelines. Thanks for stopping
+          by!!
         </p>
-        <p>
-          Hobbies: dauchshunds, dauchshunds, dauchshunds, dauchshunds,
-          dauchshunds, dauchshunds, dauchshunds, dauchshunds, dauchshunds, and
-          dauchshunds
+        <p className="hobbies">
+          Hobbies: dachshaunds, nachos, gardening, house plants, cats,
+          dachshunds, Adam, Lincoln Nebraska, records, concerts, and dachshunds.
         </p>
       </div>
     </section>
