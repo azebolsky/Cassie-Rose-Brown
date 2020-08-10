@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1f05ada8204ca510954efb5c2ea27b62",
+    "revision": "1f2cc1f9ec305f7600e0f63d67419cb2",
     "url": "/Cassie-Rose-Brown/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cassie-Rose-Brown/static/css/2.f4f2313f.chunk.css"
   },
   {
-    "revision": "d18a47888a5064638f2b",
-    "url": "/Cassie-Rose-Brown/static/css/main.9389afb9.chunk.css"
+    "revision": "9fb091a39f3b5c725655",
+    "url": "/Cassie-Rose-Brown/static/css/main.a110b96b.chunk.css"
   },
   {
     "revision": "6905ff3bfd29df973aed",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cassie-Rose-Brown/static/js/2.42ba1210.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d18a47888a5064638f2b",
-    "url": "/Cassie-Rose-Brown/static/js/main.d0f8a635.chunk.js"
+    "revision": "9fb091a39f3b5c725655",
+    "url": "/Cassie-Rose-Brown/static/js/main.75143a3d.chunk.js"
   },
   {
     "revision": "c4d17c44e76b02d1ec13",
