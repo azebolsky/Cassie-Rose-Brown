@@ -156,9 +156,6 @@ const Contact = ({ backToTop }) => {
           onClick={handleSubmit}
         />
       </Form> */}
-      <a href="#home" onClick={backToTop}>
-        <i className="fa fa-arrow-up" aria-hidden="true"></i>
-      </a>
     </section>
   );
 };

@@ -19,6 +19,11 @@ const about = () => {
           ECMO and COVID 19 nutrition support guidelines. Thanks for stopping
           by!!
         </p>
+        <img
+          src="https://i.imgur.com/VMRb5Gl.png"
+          className="cat-dog"
+          alt="cats and dogs"
+        />
         <p className="hobbies">
           Hobbies: dachshaunds, nachos, gardening, house plants, cats,
           dachshunds, Adam, Lincoln Nebraska, records, concerts, and dachshunds.

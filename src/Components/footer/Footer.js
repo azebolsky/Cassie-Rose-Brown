@@ -1,12 +1,15 @@
 import React from "react";
 import "./Footer.css";
 
-const footer = () => {
+const footer = (props) => {
   return (
     <>
       <div id="footer">
         <div className="footer-links-container">
           <div className="footer-links">
+            <a className="go-up" href="#home" onClick={props.backToTop}>
+              <i className="fa fa-arrow-up" aria-hidden="true"></i>
+            </a>
             <a href="#home">Home</a>
             <div className="ball"></div>
             <a href="#about">About</a>
@@ -19,33 +22,35 @@ const footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <h1>&#169; Adam Zebolsky 2020</h1>
-          <ul>
-            <li>
-              <div className="social-media">
-                <div>
-                  <a
-                    href="https://www.linkedin.com/in/cassiebrownrd/"
-                    className="fa fa-linkedin footer-social"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <p>li</p>
-                  </a>
+          <div className="footer-left">
+            <h1>&#169; Adam Zebolsky 2020</h1>
+            <ul>
+              <li>
+                <div className="social-media">
+                  <div>
+                    <a
+                      href="https://www.linkedin.com/in/cassiebrownrd/"
+                      className="fa fa-linkedin footer-social"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <p>li</p>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://www.linkedin.com/in/cassiebrownrd/"
+                      className="fa fa-paper-plane footer-social"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <p>li</p>
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <a
-                    href="https://www.linkedin.com/in/cassiebrownrd/"
-                    className="fa fa-paper-plane footer-social"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <p>li</p>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
           <div className="footer-right">
             <div className="bubble">Thanks for stopping by!</div>
             <img
