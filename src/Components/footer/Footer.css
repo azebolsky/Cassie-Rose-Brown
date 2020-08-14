@@ -1,9 +1,9 @@
 #footer {
   width: 100%;
-  box-sizing: border-box !important;
   height: 60vh;
   background-color: rgb(108, 106, 106);
   margin: 0;
+  padding: 0 !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,13 +16,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 0;
 }
 
 .footer-links {
   color: white;
   text-decoration: none;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -182,7 +183,7 @@
 
 @media (max-width: 1200px) {
   .footer-links-container {
-    width: 90%;
+    width: 95%;
     /* padding-top: 30px; */
   }
 }
@@ -213,15 +214,6 @@
     font-size: 15px;
   }
 
-  .fa.footer-social,
-  .footer-links > a > .fa {
-    padding: 22px;
-    margin: 5px;
-    font-size: 25px;
-    width: 40px;
-    height: 40px;
-  }
-
   .lena-image {
     bottom: 0px;
     width: 120px;
@@ -245,16 +237,6 @@
     font-size: 15px;
   }
 
-  .footer-middle {
-    display: none;
-  }
-
-  .footer-left {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-  }
-
   .fa.footer-social {
     padding: 18px;
     margin: 3px;
@@ -271,7 +253,7 @@
 
 @media (max-width: 500px), (max-height: 700px) {
   #footer {
-    height: 90vh;
+    height: 95vh;
     /* width: 100%; */
   }
 
@@ -280,26 +262,38 @@
   }
 
   .footer-links-container {
-    width: 80%;
+    width: 95%;
+    padding-top: 10px;
+  }
+
+  .lena-image {
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .bubble {
+    width: 85px;
+    height: 75px;
+    font-size: 12px;
+    border-radius: 50%;
+  }
+
+  .bubble::after {
+    right: -23px;
+    top: 22px;
   }
 }
 
 @media (max-width: 500px) {
   #footer {
-    height: 50vh;
-    /* width: 100%; */
+    height: 60vh;
   }
 
   .footer-links > .go-up > .fa {
     font-size: 20px;
     width: 30px;
     height: 30px;
-  }
-
-  .footer-bottom > .footer-left {
-    height: 100%;
-    display: flex;
-    flex-direction: column-reverse;
   }
 
   .ball {
@@ -323,20 +317,19 @@
   }
 
   .bubble::after {
-    right: -22px;
-    top: 25px;
+    right: -23px;
+    top: 22px;
   }
 
   .footer-left > h1 {
     padding-left: 10px;
     padding-bottom: 10px;
     font-size: 10px;
-    align-self: flex-start;
   }
 
   .footer-links-container {
-    width: 95%;
-    padding-top: 15px;
+    width: 100%;
+    padding-top: 5px;
   }
 
   .footer-links > a {
