@@ -1,6 +1,7 @@
 #footer {
   width: 100%;
-  height: 40vh;
+  box-sizing: border-box !important;
+  height: 60vh;
   background-color: rgb(108, 106, 106);
   margin: 0;
   display: flex;
@@ -15,7 +16,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 40px;
+  padding: 0;
 }
 
 .footer-links {
@@ -56,6 +57,10 @@
   flex-direction: row;
 }
 
+.left-social {
+  display: none !important;
+}
+
 .footer-bottom {
   width: 100%;
   display: flex;
@@ -63,20 +68,26 @@
   justify-content: space-between;
 }
 
-.footer-bottom > .footer-left {
+.footer-left {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 55%;
 }
 
-.footer-bottom > .footer-left > ul {
-  display: flex;
-  align-items: center;
+#footer > ul {
+  margin: 0;
+  padding-top: 20px;
   list-style-type: none;
 }
 
-#footer > .footer-bottom > .footer-left > h1 {
+#footer > h1 {
+  color: rgb(33, 47, 63);
+  font-size: 50px;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-left > h1 {
   padding-left: 10px;
   font-size: 20px;
   color: rgb(33, 47, 63);
@@ -144,7 +155,7 @@
 .go-up {
   padding: 0;
 }
-
+/* 
 .footer-links > .go-up > .fa {
   padding: 0;
   margin: 0;
@@ -162,17 +173,17 @@
 .footer-links > .go-up > .fa.fa-arrow-up:hover {
   border: none !important;
   color: rgb(255, 206, 206);
-  background-color: rgb(74, 74, 74);
+  background-color: rgb(62, 62, 62);
 }
 
 .footer-links > .go-up:hover {
   border: none !important;
-}
+} */
 
 @media (max-width: 1200px) {
   .footer-links-container {
     width: 90%;
-    padding-top: 30px;
+    /* padding-top: 30px; */
   }
 }
 
@@ -182,11 +193,11 @@
     padding-top: 25px;
   }
 
-  .footer-links > .go-up > .fa {
-    font-size: 25px;
-    width: 40px;
-    height: 40px;
-  }
+  /* .footer-links > .go-up > .fa {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  } */
 
   .footer-links > a {
     font-size: 20px;
@@ -198,8 +209,17 @@
     padding: 3px;
   }
 
-  #footer > .footer-bottom > h1 {
+  .footer-left > h1 {
     font-size: 15px;
+  }
+
+  .fa.footer-social,
+  .footer-links > a > .fa {
+    padding: 22px;
+    margin: 5px;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
   }
 
   .lena-image {
@@ -218,28 +238,56 @@
 
 @media (max-width: 800px) {
   #footer {
-    height: 35vh;
+    height: 45vh;
   }
 
-  .footer-bottom > .footer-left {
-    width: 59%;
-  }
-
-  #footer > .footer-bottom > .footer-left > h1 {
+  .footer-left > h1 {
     font-size: 15px;
+  }
+
+  .footer-middle {
+    display: none;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .fa.footer-social {
+    padding: 18px;
+    margin: 3px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .footer-left > ul > li > .social-media > div {
+    margin: 0 5px;
   }
 }
 
 @media (max-width: 500px), (max-height: 700px) {
   #footer {
-    height: 70vh;
-    width: 100%;
+    height: 90vh;
+    /* width: 100%; */
+  }
+
+  #footer > h1 {
+    font-size: 40px;
+  }
+
+  .footer-links-container {
+    width: 80%;
   }
 }
 
 @media (max-width: 500px) {
   #footer {
-    height: 30vh;
+    height: 50vh;
+    /* width: 100%; */
   }
 
   .footer-links > .go-up > .fa {
@@ -274,45 +322,25 @@
     border-radius: 50%;
   }
 
-  .bubble:after {
+  .bubble::after {
     right: -22px;
     top: 25px;
   }
 
-  #footer > .footer-bottom > .footer-left > h1 {
+  .footer-left > h1 {
     padding-left: 10px;
     padding-bottom: 10px;
     font-size: 10px;
     align-self: flex-start;
   }
 
-  .footer-bottom > .footer-left > ul {
-    padding-left: 20px;
-    margin: 0;
-    display: flex;
-    align-self: flex-start;
-  }
-
   .footer-links-container {
-    width: 100%;
+    width: 95%;
     padding-top: 15px;
   }
 
   .footer-links > a {
     font-size: 10px;
     padding: 1px;
-  }
-
-  .fa.footer-social {
-    padding: 18px;
-    margin: 3px;
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }
-
-  .footer-left > ul > li > .social-media > div {
-    margin: 0 5px;
   }
 }
