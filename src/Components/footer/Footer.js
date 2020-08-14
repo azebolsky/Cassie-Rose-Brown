@@ -5,7 +5,13 @@ const footer = (props) => {
   return (
     <>
       <div id="footer">
-        <h1>Cassie Brown</h1>
+        <div className="top-container">
+          <div></div>
+          <h1>Cassie Brown</h1>
+          <a className="go-up" href="#home" onClick={props.backToTop}>
+            <i className="fa fa-arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
         <ul>
           <li>
             <div className="social-media">
@@ -34,9 +40,6 @@ const footer = (props) => {
         </ul>
         <div className="footer-links-container">
           <div className="footer-links">
-            {/* <a className="go-up" href="#home" onClick={props.backToTop}>
-              <i className="fa fa-arrow-up" aria-hidden="true"></i>
-            </a> */}
             <a href="#home">Home</a>
             <div className="ball"></div>
             <a href="#about">About</a>
