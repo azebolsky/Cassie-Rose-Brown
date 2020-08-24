@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Contact.css";
-import "semantic-ui-css/semantic.min.css";
 // import { Form, Input, TextArea, Button } from "semantic-ui-react";
 
-const Contact = ({ backToTop }) => {
+const Contact = () => {
   const [content, setContent] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
+    surname: "",
     message: "",
     email: "",
     sent: false,
@@ -19,143 +18,132 @@ const Contact = ({ backToTop }) => {
     setContent({ ...content, [e.target.name]: e.target.value });
   };
 
+  function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  }
+
   const handleSubmit = (e) => {
-    e.preventDefault();
-    axios
-      .post("http://localhost:3000/send", {
-        name: content.firstName + " " + content.lastName,
+    const passingEmail = validateEmail(content.email);
+    if (passingEmail) {
+      let data = {
+        name: content.name + " " + content.surname,
         email: content.email,
         message: content.message,
-      })
-      .then((response) => {
-        if (response.data.msg === "success") {
-          alert("Message Sent");
-          resetForm();
-        } else if (response.data.msg === "fail") {
-          alert("Message failed to send");
-        }
-      });
+      };
+      axios
+        .post("https://formcarry.com/s/6KsbLjCB1fI4", data, {
+          headers: { Accept: "application/json" },
+        })
+        .then((response) => {
+          const { data } = response;
+          if (data.status === "success") {
+            console.log("Message Sent");
+          } else {
+            console.log("Message failed to send");
+          }
+        })
+        .catch(function (error) {
+          console.log(`error ============>>>>>> ${error}`);
+        });
+      e.preventDefault();
+      resetForm();
+    } else {
+      e.preventDefault();
+    }
   };
 
   const resetForm = () =>
     setContent({
-      firstName: "",
-      lastName: "",
+      name: "",
+      surname: "",
       message: "",
       email: "",
-      buttonText: "Message Sent",
+      sent: true,
+      buttonText: "Message Sent!",
+    });
+
+  const resetFormButton = () =>
+    setContent({
+      name: "",
+      surname: "",
+      message: "",
+      email: "",
+      sent: false,
+      buttonText: "Send Message",
     });
 
   return (
     <section id="contact">
-      <h1>Have a question? Want to say hi?</h1>
-      <h1>Message me!</h1>
+      <div className="transparent"></div>
+      <h1>Drop Me a Line!</h1>
+      <div className="contact-underline"></div>
       <form
         className="contact-form"
+        autoComplete="off"
         onSubmit={(event) => handleSubmit(event)}
-        method="POST"
-        action="/contact"
       >
-        <label className="message">Your Message</label>
-        <textarea
-          onChange={(event) => handleContentChange(event)}
-          name="message"
-          className="message-input"
-          type="text"
-          placeholder="Please write your message here"
-          value={content.message}
-          required
-        />
-
-        <label className="message-name">First Name</label>
+        <label htmlFor="name" className="message-name"></label>
         <input
           onChange={(event) => handleContentChange(event)}
-          name="firstName"
+          name="name"
+          id="name"
           className="message-name"
           type="text"
           placeholder="First Name"
-          value={content.firstName}
+          value={content.name}
+          required
         />
 
-        <label className="message-name">Last Name</label>
+        <label htmlFor="surname" className="message-name"></label>
         <input
           onChange={(event) => handleContentChange(event)}
-          name="lastName"
+          name="surname"
+          id="surname"
           className="message-name"
           type="text"
           placeholder="Last Name"
-          value={content.lastName}
+          value={content.surname}
+          required
         />
 
-        <label className="message-email">Your Email</label>
+        <label htmlFor="email" className="message-email"></label>
         <input
-          onChange={(event) => handleContentChange(event)}
+          onChange={(event) => {
+            handleContentChange(event);
+          }}
           name="email"
+          id="email"
           className="message-email"
           type="email"
-          placeholder="your@email.com"
-          required
+          placeholder="person@email.com"
           value={content.email}
+          required
         />
-
+        <label htmlFor="message" className="message"></label>
+        <textarea
+          onChange={(event) => handleContentChange(event)}
+          name="message"
+          id="message"
+          className="message-input"
+          type="text"
+          placeholder="Please write your message here"
+          pattern="/\S+@\S+\.\S+/"
+          value={content.message}
+          required
+        />
         <div className="button--container">
-          <button type="submit" className="button button-primary">
+          <button
+            type="submit"
+            className={content.sent ? "button-sent" : "button-contact"}
+          >
             {content.buttonText}
+          </button>
+          <button onClick={resetFormButton} className="button-reset">
+            Reset Form
           </button>
         </div>
       </form>
-
-      {/* <Form onSubmit={handleSubmit}>
-        <Form.Field
-          id="form-input-control-first-name"
-          control={Input}
-          label="First name"
-          htmlFor="first"
-          placeholder="First name"
-          name="firstName"
-          value={content.firstName}
-          onChange={(event) => handleContentChange(event)}
-        />
-        <Form.Field
-          id="form-input-control-last-name"
-          control={Input}
-          label="Last name"
-          placeholder="Last name"
-          name="lastName"
-          value={content.lastName}
-          onChange={(event) => handleContentChange(event)}
-        />
-        <Form.Field
-          id="form-textarea-control-opinion"
-          control={TextArea}
-          label="Message"
-          placeholder="Message"
-          name="message"
-          value={content.message}
-          onChange={(event) => handleContentChange(event)}
-        />
-        <Form.Field
-          id="form-input-control-error-email"
-          control={Input}
-          label="Email"
-          placeholder="coolperson@email.com"
-          name="email"
-          value={content.email}
-          onChange={(event) => handleContentChange(event)}
-          // error={{
-          //   content: "Please enter a valid email address",
-          //   pointing: "below",
-          // }}
-        />
-        <Form.Field
-          id="form-button-control-public"
-          control={Button}
-          content={content.buttonText}
-          label=""
-          color="green"
-          onClick={handleSubmit}
-        />
-      </Form> */}
     </section>
   );
 };

@@ -115,6 +115,7 @@ ul > li > a.active {
   border-radius: 50%;
   background: #3b5998;
   color: rgb(254, 175, 175);
+  text-decoration: none;
 }
 
 .fa:hover {

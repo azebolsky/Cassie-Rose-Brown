@@ -1,6 +1,145 @@
 #contact {
-  background-color: slategray;
-  color: greenyellow;
+  background: url("https://i.imgur.com/H78FVB2.jpg");
+  background-size: cover;
+  color: rgb(250, 205, 205);
   height: 100vh;
+  width: 100%;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.contact-underline {
+  width: 80px;
+  height: 5px;
+  margin: 0 auto 50px auto !important;
+  background-color: rgb(255, 213, 213);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#contact:hover > .contact-underline {
+  width: 120px;
+  transition: 0.5s;
+}
+
+.transparent {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#contact h1 {
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 0.08em;
+  z-index: 5;
+}
+
+#contact > .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0;
+  z-index: 5;
+  background-color: rgba(245, 245, 245, 0.68);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#contact > .contact-form > input,
+#contact > .contact-form > textarea {
+  border: none;
+  background-color: rgba(81, 93, 104, 0.9);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+#contact > .contact-form > input:focus,
+#contact > .contact-form > textarea:focus {
+  background-color: rgb(72, 81, 91);
+}
+
+#contact > .contact-form > input {
+  height: 35px;
+  width: 100%;
+}
+
+#contact > .contact-form > input::placeholder,
+#contact > .contact-form > textarea::placeholder {
+  color: rgba(211, 211, 211, 0.749);
+  padding-left: 2px;
+}
+
+#contact > .contact-form > textarea {
+  height: 100px;
+  width: 100%;
+}
+
+.button--container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-contact {
+  background-color: rgb(0, 131, 131);
+  color: white;
+  border-radius: 5px;
+  width: 120px;
+  height: 50px;
+  font-size: 15px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-contact:hover {
+  background-color: rgb(0, 147, 147);
+}
+
+.button-sent {
+  background-color: rgb(22, 155, 22);
+  font-style: bold;
+  border-radius: 5px;
+  width: 60%;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+  pointer-events: none;
+  border: none;
+  outline: none;
+}
+
+.button-reset {
+  background-color: rgb(228, 72, 72);
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.button-reset:hover {
+  background-color: rgb(233, 112, 112);
 }

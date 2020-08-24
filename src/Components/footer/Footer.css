@@ -37,6 +37,7 @@
   text-align: center;
   padding-bottom: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .ball {
@@ -355,7 +356,7 @@
   .footer-left > h1 {
     padding-left: 10px;
     padding-bottom: 10px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .footer-links-container {
@@ -368,7 +369,7 @@
   }
 
   .footer-links > a {
-    font-size: 12px;
+    font-size: 15px;
     padding: 1px;
   }
 }

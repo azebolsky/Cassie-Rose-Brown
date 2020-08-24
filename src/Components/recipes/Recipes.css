@@ -4,15 +4,11 @@
   height: 100%;
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 #recipes > .underline {
   margin: 0 auto 50px auto !important;
-}
-
-#recipes:hover > .underline {
-  width: 120px;
-  transition: 0.5s;
 }
 
 #recipes > .underline {
@@ -26,6 +22,11 @@
   -o-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+}
+
+#recipes:hover > .underline {
+  width: 120px;
+  transition: 0.5s;
 }
 
 #recipes > h1 {
