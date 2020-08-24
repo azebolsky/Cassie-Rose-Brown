@@ -1,26 +1,22 @@
 {
   "files": {
-    "main.css": "/Cassie-Rose-Brown/static/css/main.f34769cf.chunk.css",
-    "main.js": "/Cassie-Rose-Brown/static/js/main.e37885fc.chunk.js",
-    "main.js.map": "/Cassie-Rose-Brown/static/js/main.e37885fc.chunk.js.map",
+    "main.css": "/Cassie-Rose-Brown/static/css/main.a84d40ae.chunk.css",
+    "main.js": "/Cassie-Rose-Brown/static/js/main.977c1ee9.chunk.js",
+    "main.js.map": "/Cassie-Rose-Brown/static/js/main.977c1ee9.chunk.js.map",
     "runtime-main.js": "/Cassie-Rose-Brown/static/js/runtime-main.9f1f7265.js",
     "runtime-main.js.map": "/Cassie-Rose-Brown/static/js/runtime-main.9f1f7265.js.map",
-    "static/css/2.f4f2313f.chunk.css": "/Cassie-Rose-Brown/static/css/2.f4f2313f.chunk.css",
-    "static/js/2.42ba1210.chunk.js": "/Cassie-Rose-Brown/static/js/2.42ba1210.chunk.js",
-    "static/js/2.42ba1210.chunk.js.map": "/Cassie-Rose-Brown/static/js/2.42ba1210.chunk.js.map",
+    "static/js/2.0e1fa62b.chunk.js": "/Cassie-Rose-Brown/static/js/2.0e1fa62b.chunk.js",
+    "static/js/2.0e1fa62b.chunk.js.map": "/Cassie-Rose-Brown/static/js/2.0e1fa62b.chunk.js.map",
     "index.html": "/Cassie-Rose-Brown/index.html",
-    "precache-manifest.2baee91444a8b69cb7286050b52d2469.js": "/Cassie-Rose-Brown/precache-manifest.2baee91444a8b69cb7286050b52d2469.js",
+    "precache-manifest.c237e61de676fee81da69c9d3319db6f.js": "/Cassie-Rose-Brown/precache-manifest.c237e61de676fee81da69c9d3319db6f.js",
     "service-worker.js": "/Cassie-Rose-Brown/service-worker.js",
-    "static/css/2.f4f2313f.chunk.css.map": "/Cassie-Rose-Brown/static/css/2.f4f2313f.chunk.css.map",
-    "static/css/main.f34769cf.chunk.css.map": "/Cassie-Rose-Brown/static/css/main.f34769cf.chunk.css.map",
-    "static/js/2.42ba1210.chunk.js.LICENSE.txt": "/Cassie-Rose-Brown/static/js/2.42ba1210.chunk.js.LICENSE.txt",
-    "static/media/semantic.min.css": "/Cassie-Rose-Brown/static/media/outline-icons.ef60a4f6.woff"
+    "static/css/main.a84d40ae.chunk.css.map": "/Cassie-Rose-Brown/static/css/main.a84d40ae.chunk.css.map",
+    "static/js/2.0e1fa62b.chunk.js.LICENSE.txt": "/Cassie-Rose-Brown/static/js/2.0e1fa62b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9f1f7265.js",
-    "static/css/2.f4f2313f.chunk.css",
-    "static/js/2.42ba1210.chunk.js",
-    "static/css/main.f34769cf.chunk.css",
-    "static/js/main.e37885fc.chunk.js"
+    "static/js/2.0e1fa62b.chunk.js",
+    "static/css/main.a84d40ae.chunk.css",
+    "static/js/main.977c1ee9.chunk.js"
   ]
 }
