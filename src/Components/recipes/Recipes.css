@@ -60,18 +60,19 @@
 .cookbooks {
   width: 100%;
   height: auto;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   padding-top: 30px;
 }
 
 .inspirations:hover .cookbook1 {
   transform: rotate(-20deg);
-  left: 35%;
+  left: -5%;
 }
 
 .inspirations:hover .cookbook2 {
   transform: rotate(20deg);
-  left: 38%;
+  left: 5%;
 }
 
 .cookbook1 {
@@ -79,14 +80,14 @@
   height: auto;
   position: relative;
   z-index: 5;
-  left: 40%;
+  /* left: 40%; */
   transform: rotate(-10deg);
 }
 
 .cookbook2 {
   position: relative;
   width: 158px;
-  left: 35%;
+  /* left: 35%; */
   height: 196.28px;
   transform: rotate(10deg);
   z-index: 4;
