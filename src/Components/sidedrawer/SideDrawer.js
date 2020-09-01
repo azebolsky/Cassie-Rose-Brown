@@ -18,6 +18,7 @@ const sideDrawer = (props) => {
         />
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="home"
             spy={true}
@@ -30,6 +31,7 @@ const sideDrawer = (props) => {
         </li>
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="about"
             spy={true}
@@ -42,6 +44,7 @@ const sideDrawer = (props) => {
         </li>
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="resume"
             spy={true}
@@ -54,6 +57,7 @@ const sideDrawer = (props) => {
         </li>
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="recipes"
             spy={true}
@@ -66,6 +70,7 @@ const sideDrawer = (props) => {
         </li>
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="contact"
             spy={true}
@@ -81,7 +86,7 @@ const sideDrawer = (props) => {
             <div>
               <a
                 href="https://www.linkedin.com/in/cassiebrownrd/"
-                className="fa fa-linkedin"
+                className="fa fa-linkedin sidedrawer-social"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -90,22 +95,12 @@ const sideDrawer = (props) => {
             </div>
             <div>
               <a
-                href="https://twitter.com/sassyrosebrown"
-                className="fa fa-twitter"
+                href="https://www.linkedin.com/in/cassiebrownrd/"
+                className="fa fa-paper-plane sidedrawer-social"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <p>tw</p>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/cassierose16"
-                className="fa fa-facebook"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <p>fb</p>
+                <p>email</p>
               </a>
             </div>
           </div>

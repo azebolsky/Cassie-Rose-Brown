@@ -1,6 +1,6 @@
 .Sidebar {
   font-family: "Montserrat", sans-serif;
-  width: 100%;
+  width: 250px;
   font-size: 30px;
   font-weight: 700;
   position: relative;
@@ -28,7 +28,7 @@ h1 {
   height: 235px;
   border-radius: 50%;
   transition: 0.3s;
-  margin: 35px 0 30px 0;
+  margin: 25px 0 20px 0;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
@@ -51,23 +51,16 @@ ul {
   padding: 0;
 }
 
-@media (min-width: 300px) {
-  .Sidebar ul {
-    position: sticky;
-    top: 0;
-  }
-}
-
 .Sidebar ul li {
-  color: purple;
+  color: rgb(189, 82, 138);
   text-decoration: none;
   cursor: pointer;
-  padding: 10px 10px;
+  padding: 2px 2px;
   margin: 10px;
 }
 
-.Sidebar ul li a {
-  padding: 0 10px;
+.Sidebar ul li .side-link {
+  padding: 1px 15px;
   transition: 0.2s;
 }
 
@@ -80,25 +73,27 @@ ul > li > a.active {
 .social-media {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: auto;
 }
 
-.fa {
-  padding: 20px;
+.sidenav-social {
+  padding: 12px;
   margin: 5px;
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
+  font-size: 22px;
+  width: 25px;
+  height: 25px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: #3b5998;
-  color: rgb(254, 175, 175);
+  background: rgb(255, 134, 134);
+  color: rgb(186, 68, 131);
 }
 
-.fa:hover {
-  color: white;
+.sidenav-social:hover {
+  color: rgb(225, 225, 225);
 }
 
 .social-media > div > a > p {

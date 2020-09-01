@@ -71,23 +71,16 @@ ul {
   padding: 0;
 }
 
-@media (min-width: 300px) {
-  .Sidebar-open ul {
-    position: sticky;
-    top: 0;
-  }
-}
-
 .Sidebar-open ul li {
-  color: purple;
+  color: rgb(189, 82, 138);
   text-decoration: none;
   cursor: pointer;
-  padding: 10px 10px;
-  margin: 10px;
+  padding: 5px 10px;
+  margin: 5px;
 }
 
-.Sidebar-open ul li a {
-  padding: 0 10px;
+.Sidebar-open ul li .side-link {
+  padding: 0 5px;
   transition: 0.2s;
 }
 
@@ -102,44 +95,218 @@ ul > li > a.active {
   flex-direction: row;
 }
 
-.fa {
-  padding: 20px;
+.sidedrawer-social {
+  padding: 12px;
   margin: 5px;
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
+  font-size: 22px;
+  width: 25px;
+  height: 25px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: #3b5998;
-  color: rgb(254, 175, 175);
+  background: rgb(255, 134, 134);
+  color: rgb(186, 68, 131);
   text-decoration: none;
 }
 
-.fa:hover {
+.sidedrawer-social:hover {
   color: white;
 }
 
-.social-media > div > a > p {
+.social-media > div > li > p {
   display: none;
 }
 
-@media (max-width: 500px) {
-  .Sidebar-open ul {
-    font-size: 20px;
+@media (max-height: 700px) {
+  .Sidebar-open .sidebar-img {
+    width: 60%;
+    height: 50%;
+    margin: 35px 0 25px 0;
   }
 
-  .Sidebar-open ul li a {
-    padding: 0 5px;
+  .Sidebar-open {
+    width: 225px;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 600;
   }
 
-  .fa {
+  .Sidebar-open ul li {
+    padding: 2px 2px;
+    margin: 10px;
+  }
+
+  .Sidebar-open ul li .side-link {
+    padding: 1px 5px;
+  }
+
+  .sidedrawer-social {
     padding: 10px;
-    margin: 3px;
+    margin: 5px;
     font-size: 20px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  .Sidebar-open .sidebar-img {
+    width: 50%;
+    height: 45%;
+    margin: 30px 0 20px 0;
+  }
+
+  .Sidebar-open {
+    width: 220px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .Sidebar-open ul li {
+    padding: 2px 2px;
+    margin: 8px;
+  }
+
+  .Sidebar-open ul li .side-link {
+    padding: 1px 5px;
+  }
+
+  .sidedrawer-social {
+    padding: 8px;
+    margin: 4px;
+    font-size: 15px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-height: 490px) {
+  .Sidebar-open .sidebar-img {
+    width: 45%;
+    height: 40%;
+    margin: 18px 0 15px 0;
+  }
+
+  .Sidebar-open {
+    width: 215px;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .Sidebar-open ul li {
+    padding: 2px 2px;
+    margin: 4px;
+  }
+
+  .Sidebar-open ul li .side-link {
+    padding: 0.5px 4px;
+  }
+
+  .sidedrawer-social {
+    padding: 8px;
+    margin: 1px 4px;
+    font-size: 15px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-height: 390px) {
+  .Sidebar-open .sidebar-img {
+    width: 40%;
+    height: 33%;
+    margin: 10px 0 13px 0;
+  }
+
+  .Sidebar-open {
+    width: 190px;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .Sidebar-open ul li {
+    padding: 1px 1px;
+    margin: 5px;
+  }
+
+  .Sidebar-open ul li .side-link {
+    padding: 1px 4px;
+  }
+
+  .sidedrawer-social {
+    padding: 8px;
+    margin: 1px 4px;
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-height: 325px) {
+  .Sidebar-open .sidebar-img {
+    width: 35%;
+    height: 28%;
+    margin: 10px 0 12px 0;
+  }
+
+  .Sidebar-open {
+    width: 180px;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .Sidebar-open ul li {
+    padding: 1px 1px;
+    margin: 4px;
+  }
+
+  .Sidebar-open ul li .side-link {
+    padding: 0.5px 4px;
+  }
+
+  .sidedrawer-social {
+    padding: 8px;
+    margin: 1px 4px;
+    font-size: 15px;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-height: 290px) {
+  .Sidebar-open .sidebar-img {
+    width: 32%;
+    height: 25%;
+    margin: 8px 0 10px 0;
+  }
+
+  .Sidebar-open {
+    width: 180px;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .Sidebar-open ul li {
+    padding: 1px 1px;
+    margin: 4px;
+  }
+
+  .Sidebar-open ul li .side-link {
+    padding: 0.5px 4px;
+  }
+
+  .sidedrawer-social {
+    padding: 8px;
+    margin: 1px 4px;
+    font-size: 15px;
+    width: 12px;
+    height: 12px;
   }
 }

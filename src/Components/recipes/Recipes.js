@@ -44,7 +44,7 @@ const recipes = () => {
       <div className="inspirations">
         <div className="inspirations-text">
           So much of my inspiration comes from vegan restaurant owner and
-          author, Isa Chandler. A large chunk of the recipes below are hers
+          author, Isa Chandra. A large chunk of the recipes below are hers
           because of how uniquely delicious they are.
         </div>
         <div className="cookbooks">

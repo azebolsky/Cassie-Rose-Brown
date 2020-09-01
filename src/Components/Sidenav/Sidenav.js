@@ -13,6 +13,7 @@ const Sidenav = () => {
         />
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="home"
             spy={true}
@@ -25,6 +26,7 @@ const Sidenav = () => {
         </li>
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="about"
             spy={true}
@@ -37,6 +39,7 @@ const Sidenav = () => {
         </li>
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="resume"
             spy={true}
@@ -49,6 +52,7 @@ const Sidenav = () => {
         </li>
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="recipes"
             spy={true}
@@ -61,6 +65,7 @@ const Sidenav = () => {
         </li>
         <li>
           <Link
+            className="side-link"
             activeClass="active"
             to="contact"
             spy={true}
@@ -76,7 +81,7 @@ const Sidenav = () => {
             <div>
               <a
                 href="https://www.linkedin.com/in/cassiebrownrd/"
-                className="fa fa-linkedin"
+                className="fa fa-linkedin sidenav-social"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -85,22 +90,12 @@ const Sidenav = () => {
             </div>
             <div>
               <a
-                href="https://twitter.com/sassyrosebrown"
-                className="fa fa-twitter"
+                href="https://www.linkedin.com/in/cassiebrownrd/"
+                className="fa fa-paper-plane sidenav-social"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <p>tw</p>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.facebook.com/cassierose16"
-                className="fa fa-facebook"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <p>fb</p>
+                <p>email</p>
               </a>
             </div>
           </div>
