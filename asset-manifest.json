@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Cassie-Rose-Brown/static/css/main.655a21db.chunk.css",
-    "main.js": "/Cassie-Rose-Brown/static/js/main.d8d733f6.chunk.js",
-    "main.js.map": "/Cassie-Rose-Brown/static/js/main.d8d733f6.chunk.js.map",
+    "main.css": "/Cassie-Rose-Brown/static/css/main.87e56970.chunk.css",
+    "main.js": "/Cassie-Rose-Brown/static/js/main.d6d9018e.chunk.js",
+    "main.js.map": "/Cassie-Rose-Brown/static/js/main.d6d9018e.chunk.js.map",
     "runtime-main.js": "/Cassie-Rose-Brown/static/js/runtime-main.9f1f7265.js",
     "runtime-main.js.map": "/Cassie-Rose-Brown/static/js/runtime-main.9f1f7265.js.map",
     "static/js/2.0e1fa62b.chunk.js": "/Cassie-Rose-Brown/static/js/2.0e1fa62b.chunk.js",
     "static/js/2.0e1fa62b.chunk.js.map": "/Cassie-Rose-Brown/static/js/2.0e1fa62b.chunk.js.map",
     "index.html": "/Cassie-Rose-Brown/index.html",
-    "precache-manifest.3e36f2f55f62847f0a23ba29340cda0e.js": "/Cassie-Rose-Brown/precache-manifest.3e36f2f55f62847f0a23ba29340cda0e.js",
+    "precache-manifest.f060a954404204a28cf571d976a27cdf.js": "/Cassie-Rose-Brown/precache-manifest.f060a954404204a28cf571d976a27cdf.js",
     "service-worker.js": "/Cassie-Rose-Brown/service-worker.js",
-    "static/css/main.655a21db.chunk.css.map": "/Cassie-Rose-Brown/static/css/main.655a21db.chunk.css.map",
+    "static/css/main.87e56970.chunk.css.map": "/Cassie-Rose-Brown/static/css/main.87e56970.chunk.css.map",
     "static/js/2.0e1fa62b.chunk.js.LICENSE.txt": "/Cassie-Rose-Brown/static/js/2.0e1fa62b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9f1f7265.js",
     "static/js/2.0e1fa62b.chunk.js",
-    "static/css/main.655a21db.chunk.css",
-    "static/js/main.d8d733f6.chunk.js"
+    "static/css/main.87e56970.chunk.css",
+    "static/js/main.d6d9018e.chunk.js"
   ]
 }
