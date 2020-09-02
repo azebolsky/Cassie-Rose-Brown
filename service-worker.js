@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Cassie-Rose-Brown/precache-manifest.b36d1174af43ff2430a1d68fa567fff4.js"
+  "/Cassie-Rose-Brown/precache-manifest.11372b8c1415fe530e894141c49e88cb.js"
 );
 
 self.addEventListener('message', (event) => {
