@@ -35,7 +35,6 @@
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 4px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -142,13 +141,13 @@
   top: 30px;
 }
 
-.fa.footer-social,
-.footer-links > a > .fa {
+.fa.footer-social {
   padding: 20px;
   margin: 5px 15px 5px 15px;
   font-size: 30px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -163,19 +162,25 @@
 }
 
 .go-up {
-  padding: 0;
-  margin-right: 50px;
   border-radius: 50%;
   background-color: rgb(228, 97, 97);
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0;
+  margin-right: 50px;
 }
 
-.go-up > .fa-arrow-up {
+.go-up > .arrow {
   background-color: transparent;
   color: rgb(255, 219, 219);
   font-size: 35px;
-  padding: 0 !important;
+  padding: 10px;
+}
+
+.go-up:hover > .arrow {
+  color: white;
 }
 
 @media (max-width: 1200px) {
@@ -214,7 +219,7 @@
     height: 45px;
   }
 
-  .go-up > .fa-arrow-up {
+  .go-up > .arrow {
     font-size: 25px;
   }
 
@@ -245,8 +250,8 @@
     padding: 18px;
     margin: 3px 10px 3px 10px;
     font-size: 20px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
   }
 
@@ -260,18 +265,14 @@
     height: 35px;
   }
 
-  .go-up > .fa-arrow-up {
+  .go-up > .arrow {
     font-size: 20px;
-  }
-
-  .footer-left > ul > li > .social-media > div {
-    margin: 0 5px;
   }
 }
 
 @media (max-width: 500px), (max-height: 700px) {
   #footer {
-    height: 95vh;
+    height: 105vh;
   }
 
   #footer > .top-container > h1 {
@@ -297,30 +298,28 @@
   }
 
   .bubble::after {
-    right: -23px;
-    top: 22px;
+    right: -21px;
+    top: 28px;
   }
 }
 
 @media (max-width: 500px) {
   #footer {
-    height: 55vh;
+    height: 50vh;
   }
 
-  .footer-links > .go-up > .fa {
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-  }
-
-  .ball {
-    width: 3px;
-    height: 3px;
-    padding: 2px;
+  #footer > .top-container > h1 {
+    font-size: 30px;
   }
 
   #footer > .top-container > div {
-    width: 60px;
+    width: 35px;
+  }
+
+  .ball {
+    width: 2px;
+    height: 2px;
+    padding: 1.5px;
   }
 
   .go-up {
@@ -329,8 +328,16 @@
     height: 25px;
   }
 
-  .go-up > .fa-arrow-up {
+  .go-up > .arrow {
     font-size: 15px;
+  }
+
+  .fa.footer-social {
+    padding: 20px;
+    margin: 2px 8px 2px 8px;
+    font-size: 16px;
+    width: 3px;
+    height: 3px;
   }
 
   .lena-image {
@@ -348,15 +355,15 @@
   }
 
   .bubble::after {
-    right: -18px;
-    top: 25px;
+    right: -17px;
+    top: 29px;
     border-width: 10px 0 10px 20px;
   }
 
   .footer-left > h1 {
     padding-left: 10px;
     padding-bottom: 10px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .footer-links-container {
@@ -369,7 +376,6 @@
   }
 
   .footer-links > a {
-    font-size: 15px;
-    padding: 1px;
+    font-size: 14px;
   }
 }

@@ -9,7 +9,7 @@ const footer = (props) => {
           <div></div>
           <h1>Cassie Brown</h1>
           <a className="go-up" href="#home" onClick={props.backToTop}>
-            <i className="fa fa-arrow-up" aria-hidden="true"></i>
+            <i className="fa fa-arrow-up arrow" aria-hidden="true"></i>
           </a>
         </div>
         <ul>
