@@ -53,7 +53,7 @@ const footer = (props) => {
         </div>
         <div className="footer-bottom">
           <div className="footer-left">
-            <h1>&#169; Adam Zebolsky 2020</h1>
+            <h1>Created By Someone in 2020</h1>
           </div>
           <div className="footer-right">
             <div className="bubble">Thanks for stopping by!</div>

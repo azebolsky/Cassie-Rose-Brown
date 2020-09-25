@@ -78,11 +78,11 @@
 }
 
 .left::after {
-  right: -12px;
+  right: -15.5px;
 }
 
 .right {
-  left: 50%;
+  left: 49.75%;
 }
 
 .right::before {

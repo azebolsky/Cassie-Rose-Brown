@@ -57,6 +57,11 @@
   transition: all 0.3s ease-in;
 }
 
+#about:hover > .underline-about {
+  width: 120px;
+  transition: 0.5s;
+}
+
 @media (max-width: 800px) {
   .about-content {
     display: flex;
