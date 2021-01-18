@@ -1,7 +1,6 @@
 #recipes {
   background-color: rgb(108, 106, 106);
   min-height: 180vh;
-  /* height: 170vh; */
   width: 100%;
   margin: 0;
   padding: 20px 0 80px 0;
@@ -152,5 +151,15 @@
   .inspirations > .inspirations-text {
     width: 80%;
     font-size: 15px;
+  }
+
+  .cookbook1 {
+    width: 138px;
+    height: 176.28px;
+  }
+
+  .cookbook2 {
+    width: 138px;
+    height: 176.28px;
   }
 }

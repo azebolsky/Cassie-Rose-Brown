@@ -127,8 +127,17 @@
   #home h3 {
     font-size: 30px;
   }
+}
 
-  #home h1 {
-    padding-top: 40px;
+@media (max-width: 500px) {
+  .cassie-image {
+    width: 40%;
+    min-width: 300px;
+    min-height: 300px;
+  }
+
+  .home-heading > p {
+    margin: 15px 0 0 0;
+    padding: 0;
   }
 }

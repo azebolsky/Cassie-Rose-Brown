@@ -14,6 +14,7 @@
 #about > h1 {
   font-size: 50px;
   text-align: center;
+  margin: 0;
 }
 
 .about-content {
@@ -43,10 +44,10 @@
 }
 
 .underline-about {
-  width: 80px;
+  width: 80px !important;
   height: 5px;
   background-color: rgb(255, 134, 134);
-  margin: 0 auto 20px auto;
+  margin: 20px auto 20px auto;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -72,12 +73,12 @@
 
 @media (max-width: 450px) {
   #about {
-    height: 120vh;
+    height: 140vh;
   }
 }
 
 @media (max-width: 350px) {
   #about {
-    height: 160vh;
+    height: 180vh;
   }
 }
