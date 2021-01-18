@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Cassie-Rose-Brown/static/css/main.b4738a07.chunk.css",
+    "main.css": "/Cassie-Rose-Brown/static/css/main.6bce3e8e.chunk.css",
     "main.js": "/Cassie-Rose-Brown/static/js/main.d6cb4ba7.chunk.js",
     "main.js.map": "/Cassie-Rose-Brown/static/js/main.d6cb4ba7.chunk.js.map",
     "runtime-main.js": "/Cassie-Rose-Brown/static/js/runtime-main.9f1f7265.js",
@@ -8,15 +8,15 @@
     "static/js/2.0e1fa62b.chunk.js": "/Cassie-Rose-Brown/static/js/2.0e1fa62b.chunk.js",
     "static/js/2.0e1fa62b.chunk.js.map": "/Cassie-Rose-Brown/static/js/2.0e1fa62b.chunk.js.map",
     "index.html": "/Cassie-Rose-Brown/index.html",
-    "precache-manifest.eff7b3267c095e4dc8f82943c8342822.js": "/Cassie-Rose-Brown/precache-manifest.eff7b3267c095e4dc8f82943c8342822.js",
+    "precache-manifest.ff090e52d83805bc31903b1910d35e94.js": "/Cassie-Rose-Brown/precache-manifest.ff090e52d83805bc31903b1910d35e94.js",
     "service-worker.js": "/Cassie-Rose-Brown/service-worker.js",
-    "static/css/main.b4738a07.chunk.css.map": "/Cassie-Rose-Brown/static/css/main.b4738a07.chunk.css.map",
+    "static/css/main.6bce3e8e.chunk.css.map": "/Cassie-Rose-Brown/static/css/main.6bce3e8e.chunk.css.map",
     "static/js/2.0e1fa62b.chunk.js.LICENSE.txt": "/Cassie-Rose-Brown/static/js/2.0e1fa62b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9f1f7265.js",
     "static/js/2.0e1fa62b.chunk.js",
-    "static/css/main.b4738a07.chunk.css",
+    "static/css/main.6bce3e8e.chunk.css",
     "static/js/main.d6cb4ba7.chunk.js"
   ]
 }
