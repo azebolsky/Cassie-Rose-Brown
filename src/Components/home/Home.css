@@ -1,16 +1,9 @@
 #home {
-  /* background-image: url("https://i.imgur.com/N9dkVfg.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: center;
-  background-repeat: no-repeat; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background-position: center;
-  /* background-color: cornsilk; */
   color: rgb(244, 222, 168);
   text-shadow: 0.8px 0.8px 0.8px rgb(85, 85, 85);
   height: 100vh;
@@ -19,11 +12,6 @@
   padding: 0;
   border-bottom: 2px solid grey;
 }
-
-/* .section {
-  display: flex;
-  flex-direction: row;
-} */
 
 .home-heading {
   width: 40%;
@@ -46,27 +34,8 @@
   min-width: 390px;
   margin: 0;
   border-radius: 50%;
-  /* top: 0;
-  right: 0;
-  position: relative; */
   z-index: 3;
 }
-
-/* .pic-container::after {
-  border: 2px solid black;
-  content: "Cassie Brown";
-  color: #8601af;
-  text-shadow: 1px 1px 1px white;
-  text-align: center;
-  font-size: 59px;
-  position: absolute;
-  height: 35%;
-  width: 75%;
-  top: 150px;
-  left: 20%;
-  z-index: 4;
-  width: 500px;
-} */
 
 #home h1 {
   font-size: 60px;
